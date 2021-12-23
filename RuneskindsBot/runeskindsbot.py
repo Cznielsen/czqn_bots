@@ -3,6 +3,7 @@ import os
 import random
 
 import discord
+from discord.message import Message
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -44,15 +45,27 @@ async def on_message(message):
         "Vi ønsker landet og folkestyret udviklet i frihed og vil bekæmpe ethvert forsøg på at indskrænke folkestyret og borgernes frihedsrettigheder.",
         "Dansk Folkeparti vil spille en aktiv rolle i folkestyret: I folketing og i kommunale råd vil vi – gerne gennem samarbejde med andre partier – samvittighedsfuldt arbejde for at få gennemført så meget af vor politik som muligt.",
         "Hitler var en smuk mand <:termohitler:762756837639585872>",
-        "Ja, okay, det har du måske ret i. <:adolfaaberg::921563123914276864>",
+        "Ja, okay, det har du måske ret i. <:adolfaaberg:762762833619845182>",
         "Datamat.",
-        "HVAD FUCK LAVER DU?! <:DansGame:690558693502091298>"
+        "HVAD FUCK LAVER DU?! <:DansGame:690558693502091298>",
+        "Rød Prince <:pogconnect:690570562589818891>"
     ]
     
-    adolf_aaberg = discord.utils.get(client.emojis, name=':adolfaaberg:')
-
-    if "rune" in message.content.lower():
+    kineser_quotes = [
+        "lol kineser <:AmaoJensenemoji:906169530886262814>",
+        "Taiwan numba wan",
+        "Chingelongegongong. <:RuneCoin:765693246574821406>"
+    ]
+        
+    if "rune" in message.content.lower() or (message.author.id == 350370882394259457 and random.randint(0, 1) == 0):
         response = random.choice(rune_quotes)
+        await message.channel.send(response)
+          
+    elif message.author.id == 247448396548407300 and random.randint(0, 30) >= 27:
+        await message.channel.send("Sikke nogle flotte ævlkinder du har. <:aminrock:906183466348077097>")
+        
+    elif message.author.id == 151073786198753281 and random.randint(0, 30) >= 27:
+        response = random.choice(kineser_quotes)
         await message.channel.send(response)
 
 
