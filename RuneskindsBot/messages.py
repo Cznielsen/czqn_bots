@@ -28,5 +28,6 @@ kineser_quotes = [
 ]
 
 mikkel_quotes = [
-    "Sikke nogle flotte ævlkinder du har. <:aminrock:906183466348077097>"
+    "Sikke nogle flotte ævlkinder du har. <:aminrock:906183466348077097>",
+    "Vi skal lige have en flaske Smirnoff inden luk <:aminrock:906183466348077097>"
 ]
