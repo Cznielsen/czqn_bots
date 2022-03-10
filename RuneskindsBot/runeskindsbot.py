@@ -75,9 +75,9 @@ async def on_message(message):
         response = random.choice(messages.rune_quotes)
         await message.channel.send(response)
           
-    elif message.author.id == 247448396548407300 and random.randint(0, 30) >= 5:
+    elif message.author.id == 247448396548407300 and random.randint(0, 30) >= 15:
         response = random.choice(messages.mikkel_quotes)
-        await message.channel.send()
+        await message.channel.send(response)
         
     elif message.author.id == 151073786198753281 and random.randint(0, 30) >= 27:
         response = random.choice(messages.kineser_quotes)
