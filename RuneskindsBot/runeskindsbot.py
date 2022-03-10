@@ -27,7 +27,14 @@ def calculate_btc_in_dkk():
 
 def handle_conversions(message_content):
     if any(num.isdigit() for num in message_content) and any(key in message_content for key in uc.length_dict_ny.keys()):
-        number = float(re.search(r'\d+', message_content).group())
+        
+        if re.match(r'\d+\.\d+', message_content):
+            number = float(re.search(r'\d+\.\d+', message_content).group())
+        elif re.match(r'\d+\,\d+', message_content):
+            number = float(re.search(r'\d+\,\d+', message_content).group())
+        else:
+            number = float(re.search(r'\d+', message_content).group())
+        
         unit = find_word_match_dumb(uc.length_dict_ny.keys(), message_content)
         
         gammel = bool(random.getrandbits(1))
