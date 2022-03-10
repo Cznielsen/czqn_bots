@@ -31,7 +31,7 @@ def handle_conversions(message_content):
         unit = find_word_match_dumb(uc.length_dict_ny.keys(), message_content)
         
         gammel = bool(random.getrandbits(1))
-        gammel_suffix = "(før 1835). <:DendiFace:690558683138097152>" if gammel else ". <:DendiFace:690558683138097152>"
+        gammel_suffix = " (før 1835). <:DendiFace:690558683138097152>" if gammel else ". <:DendiFace:690558683138097152>"
         
         if len(unit) == 0:
             return
@@ -40,7 +40,7 @@ def handle_conversions(message_content):
         else:
             result_val, result_key = uc.length_to_length(unit[0], number, unit[1], gammel)
             
-        response = f'{number} {unit[0]} svarer til {result_val} {result_key} {gammel_suffix}'
+        response = f'{number} {unit[0]} svarer til {result_val} {result_key}{gammel_suffix}'
         return response
         
 
