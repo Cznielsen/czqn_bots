@@ -40,7 +40,7 @@ def handle_conversions(message_content):
         else:
             result_val, result_key = uc.length_to_length(unit[0], number, unit[1], gammel)
             
-        response = f'{number:,} {unit[0]} svarer til {result_val:,} {result_key}{gammel_suffix}'
+        response = f'{number:,} {unit[0]} svarer til {result_val:,} {result_key}{gammel_suffix}'.replace(',', ' ')
         return response
         
 
