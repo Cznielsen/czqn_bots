@@ -27,7 +27,13 @@ length_dict_ny = {
     "skår" : 1.8844,
     "tomme" : 0.0262,
     "nautisk mil" : 1852,
-    "sømil" : 1852
+    "sømil" : 1852,
+    "m" : 1,
+    "cm" : 0.01,
+    "km" : 1000,
+    "mm" : 0.001,
+    "mikkel" : 1.75,
+    "nes" : 1.78
 }
 
 length_dict_gammel = {
@@ -45,5 +51,11 @@ length_dict_gammel = {
     "skår" : 1.8831,
     "tomme" : 0.0262,
     "nautisk mil" : 1852,
-    "sømil" : 1852
+    "sømil" : 1852,
+    "m" : 1,
+    "cm" : 0.01,
+    "km" : 1000,
+    "mm" : 0.001,
+    "mikkel" : 1.75,
+    "nes" : 1.78
 }
