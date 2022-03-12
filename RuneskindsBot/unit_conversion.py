@@ -33,7 +33,10 @@ length_dict_ny = {
     "km" : 1000,
     "mm" : 0.001,
     "mikkel" : 1.75,
-    "nes" : 1.78
+    "nes" : 1.78,
+    "py" : 1.85,
+    "jens" : 1.86,
+    "victor": 1.87
 }
 
 length_dict_gammel = {
@@ -57,5 +60,8 @@ length_dict_gammel = {
     "km" : 1000,
     "mm" : 0.001,
     "mikkel" : 1.75,
-    "nes" : 1.78
+    "nes" : 1.78,
+    "py" : 1.85,
+    "jens" : 1.86,
+    "victor" : 1.87
 }
